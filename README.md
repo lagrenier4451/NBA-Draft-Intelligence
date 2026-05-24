@@ -1,7 +1,7 @@
 # NBA Draft Intelligence: From Combine Measurements to Career Predictions
 
-**Authors:** Luc Grenier & Patrick Reilly  
-**Course:** Data Mining — Spring 2026  
+**Authors:** Luc-Alexandre Grenier 
+  
 **Dataset:** [wyattowalsh/basketball](https://www.kaggle.com/datasets/wyattowalsh/basketball) (Kaggle) — 65,000+ games, 4,000+ players, 2001–2019
 
 ---
