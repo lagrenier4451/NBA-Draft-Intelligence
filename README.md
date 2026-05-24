@@ -39,7 +39,7 @@ Two competing models reveal a striking result:
 
 **82.7% of Model 1's explanatory power** comes from `overall_pick` alone (β = −0.140, p < .001). Each pick later in the draft predicts 0.14 fewer seasons. Combine factors (Size, Explosiveness, Strength) are statistically insignificant in both models.
 
-**Interpretation:** Teams use physical measurements to set draft position, but once that investment decision is made, raw athleticism scores add no further predictive value. Organizational commitment — proxied by pick number — is what predicts longevity.
+Teams use physical measurements to set draft position, but once that investment decision is made, raw athleticism scores add no further predictive value. Organizational commitment — proxied by pick number — is what predicts longevity.
 
 ### 3. Four Physical Archetypes via K-Means Clustering (k=4)
 
