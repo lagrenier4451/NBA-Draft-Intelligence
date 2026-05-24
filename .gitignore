@@ -1,0 +1,21 @@
+# Data - too large for GitHub (download via kagglehub)
+*.db
+*.sqlite
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
+.venv/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Kaggle cache (raw dataset - not committed)
+kagglehub/
+
+# OS
+.DS_Store
+Thumbs.db
