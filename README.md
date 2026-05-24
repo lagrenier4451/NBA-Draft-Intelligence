@@ -153,8 +153,6 @@ NBA-Draft-Analysis/
 
 ## Limitations
 
-- Combine attendance is self-selected — top projected picks often skip testing, introducing selection bias
+- Combine attendance is self-selected. tTop projected picks may skip testing, introducing selection bias
 - Career length is a noisy success proxy; it captures longevity but not impact or efficiency
 - The high school organization effect is an era artifact (pre-2005 age rule)
-- OLS residuals show mild non-normality (Omnibus test significant) — a survival model may be more appropriate
-- 2026 prospect scores use partial measurements; several athletic testing variables were imputed at the historical mean
