@@ -6,12 +6,15 @@ Run from Anaconda Prompt:
     cd C:\Users\Luc\.cache\kagglehub\datasets\wyattowalsh\basketball\versions\231
     python nba_pca_analysis.py
 
-Outputs saved in the same folder:
-    scree_plot.png
-    loadings_heatmap.png
-    biplot.png
-    scores_by_position.png
-    pca_factor_scores.csv
+Outputs saved to outputs/ and data/:
+    outputs/regression_coef_plot.png
+    outputs/cluster_selection.png
+    outputs/archetype_clusters.png
+    outputs/dark_horse_scatter.png
+    outputs/bust_vs_darkhorse.png
+    outputs/prospects_2026.png
+    data/pca_factor_scores.csv
+    data/prospects_2026_scores.csv
 """
 
 import warnings
