@@ -1,7 +1,7 @@
 # NBA Draft Intelligence: From Combine Measurements to Career Predictions
 
-**Authors:** Luc Grenier & Patrick Reilly  
-**Course:** Data Mining — Spring 2026  
+**Authors:** Luc-Alexandre Grenier 
+  
 **Dataset:** [wyattowalsh/basketball](https://www.kaggle.com/datasets/wyattowalsh/basketball) (Kaggle) — 65,000+ games, 4,000+ players, 2001–2019
 
 ---
@@ -39,7 +39,7 @@ Two competing models reveal a striking result:
 
 **82.7% of Model 1's explanatory power** comes from `overall_pick` alone (β = −0.140, p < .001). Each pick later in the draft predicts 0.14 fewer seasons. Combine factors (Size, Explosiveness, Strength) are statistically insignificant in both models.
 
-**Interpretation:** Teams use physical measurements to set draft position, but once that investment decision is made, raw athleticism scores add no further predictive value. Organizational commitment — proxied by pick number — is what predicts longevity.
+Teams use physical measurements to set draft position, but once that investment decision is made, raw athleticism scores add no further predictive value. Organizational commitment — proxied by pick number — is what predicts longevity.
 
 ### 3. Four Physical Archetypes via K-Means Clustering (k=4)
 
@@ -153,8 +153,6 @@ NBA-Draft-Analysis/
 
 ## Limitations
 
-- Combine attendance is self-selected — top projected picks often skip testing, introducing selection bias
+- Combine attendance is self-selected. tTop projected picks may skip testing, introducing selection bias
 - Career length is a noisy success proxy; it captures longevity but not impact or efficiency
 - The high school organization effect is an era artifact (pre-2005 age rule)
-- OLS residuals show mild non-normality (Omnibus test significant) — a survival model may be more appropriate
-- 2026 prospect scores use partial measurements; several athletic testing variables were imputed at the historical mean
