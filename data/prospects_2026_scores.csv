@@ -1,8 +1,8 @@
 name,pick,Size,Explosiveness,Strength,archetype,predicted_career,imputed,dark_horse_flag
-AJ Dybantsa,1,0.08,1.35,-0.54,Athletic Wing,9.3,5,False
-Darryn Peterson,3,-1.3,0.6,-0.07,Quick Guard,9.2,2,True
-Cameron Boozer,5,1.45,1.09,-0.18,Athletic Wing,8.7,5,False
-Caleb Wilson,9,0.43,1.13,-0.66,Athletic Wing,8.1,5,False
-Baba Miller,17,1.47,1.03,-0.82,Athletic Wing,6.9,7,False
-Aday Mara,22,2.8,1.99,-1.57,Athletic Wing,5.9,7,False
-Luigi Suigo,28,3.56,2.5,-0.67,Athletic Wing,5.2,6,False
+AJ Dybantsa,1,0.08,1.35,-0.54,Traditional Big,10.3,5,False
+Darryn Peterson,3,-1.3,0.6,-0.07,Athletic Wing,10.2,2,False
+Cameron Boozer,5,1.45,1.09,-0.18,Traditional Big,9.7,5,False
+Caleb Wilson,9,0.43,1.13,-0.66,Traditional Big,9.1,5,False
+Baba Miller,17,1.47,1.03,-0.82,Traditional Big,7.9,7,False
+Aday Mara,22,2.8,1.99,-1.57,Traditional Big,6.9,7,False
+Luigi Suigo,28,3.56,2.5,-0.67,Traditional Big,6.2,6,False
