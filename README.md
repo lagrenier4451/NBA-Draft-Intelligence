@@ -1,8 +1,12 @@
 # NBA Draft Intelligence: From Combine Measurements to Career Predictions
 
-**Authors:** Luc-Alexandre Grenier 
-  
+**Authors:** Luc-Alexandre Grenier & Patrick Reilly  
+**Course:** Data Mining — Spring 2026
 **Dataset:** [wyattowalsh/basketball](https://www.kaggle.com/datasets/wyattowalsh/basketball) (Kaggle) — 65,000+ games, 4,000+ players, 2001–2019
+
+> **This notebook is Part 2 of a two-part project.**
+> Part 1 (EDA) lives at [bahaneku/nba-draft-analysis](https://github.com/bahaneku/nba-draft-analysis) and covers data profiling, missingness analysis, correlation structure, t-SNE, and association rule mining.
+> This repo covers PCA, OLS regression, K-Means clustering, and 2026 prospect scoring.
 
 ---
 
@@ -45,20 +49,20 @@ Teams use physical measurements to set draft position, but once that investment 
 
 | Archetype | n | Avg Career | Elite Rate |
 |---|---|---|---|
-| Athletic Wing | 122 | 6.69 yrs | 1.64% |
-| Quick Guard | 108 | 6.44 yrs | **2.78%** |
-| Traditional Big | 87 | 6.09 yrs | 1.15% |
-| Undersized Athlete | 141 | 5.72 yrs | 0.71% |
+| Athletic Wing | 122 | 7.69 yrs | 1.64% |
+| Quick Guard | 108 | 7.44 yrs | **2.78%** |
+| Traditional Big | 87 | 7.09 yrs | 1.15% |
+| Undersized Athlete | 141 | 6.72 yrs | 0.71% |
 
 **Quick Guards have the highest elite rate despite being drafted latest on average (pick 28).** Chris Paul, Stephen Curry, and Damian Lillard all live in this cluster — physically underwhelming at the combine, historically transcendent in the league.
 
 ### 4. Dark Horses & Busts
 
 **Dark horses** (late picks who outperformed career expectations):
-- Trevor Ariza (pick 43, 17 seasons), Marcin Gortat (pick 57, 11 seasons), Isaiah Thomas (pick 60, 10 seasons)
+- Trevor Ariza (pick 43, 18 seasons), Marcin Gortat (pick 57, 12 seasons), Isaiah Thomas (pick 60, 11 seasons)
 
-**Busts** (top-15 picks with elite physical scores, careers < 5 seasons):
-- Hasheem Thabeet (pick 2, 4 seasons), Thomas Robinson (pick 5, 4 seasons), Jaxson Hayes (pick 8, 4 seasons)
+**Busts** (top-15 picks with elite physical scores, careers < 6 seasons):
+- Hasheem Thabeet (pick 2, 5 seasons), Thomas Robinson (pick 5, 5 seasons), Jaxson Hayes (pick 8, 5 seasons)
 
 The combine flagged Kevin Durant's biggest weaknesses (0 bench press reps, below-average explosiveness) and missed his greatness entirely.
 
@@ -81,15 +85,15 @@ The combine flagged Kevin Durant's biggest weaknesses (0 bench press reps, below
 
 Using the PCA framework trained on historical data, we scored the 2026 draft combine class:
 
-| Prospect | Proj. Pick | Archetype | Size | Explosiveness | Strength |
-|---|---|---|---|---|---|
-| AJ Dybantsa | #1 | Athletic Wing | Average | Above Avg | Below Avg |
-| Darryn Peterson | #3 | **Quick Guard** | Below Avg | Above Avg | Average |
-| Cameron Boozer | #5 | Athletic Wing | Above Avg | Above Avg | Average |
-| Caleb Wilson | #9 | Athletic Wing | Average | Above Avg | Below Avg |
-| Baba Miller | #17 | Athletic Wing | Above Avg | Above Avg | Below Avg |
-| Aday Mara | #22 | Athletic Wing | **Elite** | Elite* | Low |
-| Luigi Suigo | #28 | Athletic Wing | **Elite** | Elite* | Below Avg |
+| Prospect | Proj. Pick | Archetype | Size | Explosiveness | Strength | Pred. Career |
+|---|---|---|---|---|---|---|
+| AJ Dybantsa | #1 | Athletic Wing | Average | Above Avg | Below Avg | 10.3 yrs |
+| Darryn Peterson | #3 | **Quick Guard** | Below Avg | Above Avg | Average | 10.2 yrs |
+| Cameron Boozer | #5 | Athletic Wing | Above Avg | Above Avg | Average | 9.7 yrs |
+| Caleb Wilson | #9 | Athletic Wing | Average | Above Avg | Below Avg | 9.1 yrs |
+| Baba Miller | #17 | Athletic Wing | Above Avg | Above Avg | Below Avg | 7.9 yrs |
+| Aday Mara | #22 | Athletic Wing | **Elite** | Elite* | Low | 6.9 yrs |
+| Luigi Suigo | #28 | Athletic Wing | **Elite** | Elite* | Below Avg | 6.2 yrs |
 
 *\* Estimated — athletic testing not yet completed at time of analysis*
 
