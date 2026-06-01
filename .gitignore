@@ -10,8 +10,9 @@ __pycache__/
 venv/
 .venv/
 
-# Jupyter checkpoints
+# Jupyter
 .ipynb_checkpoints/
+.virtual_documents/
 
 # Kaggle cache (raw dataset - not committed)
 kagglehub/
