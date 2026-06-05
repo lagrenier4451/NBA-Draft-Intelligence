@@ -34,10 +34,10 @@ Not surprising that size dominated — it's the most consistently measured thing
 **Regression — draft pick is almost everything**
 
 We ran two models predicting career length:
-- Model 1 (with draft pick): R² = 0.307
-- Model 2 (combine only): R² = 0.053
+- Model 1 (with draft pick): R² = 0.308
+- Model 2 (combine only): R² = 0.113
 
-Draft pick alone explains most of that. The combine factors were statistically insignificant in both models. Our interpretation: teams already use physical measurements when deciding where to pick someone, so once the pick is made, the combine doesn't add new information.
+Removing draft pick drops the R² by 0.196 — about 63.5% of Model 1's explanatory power comes from the pick alone. The combine factors were statistically insignificant in both models. Our interpretation: teams already use physical measurements when deciding where to pick someone, so once the pick is made, the combine doesn't add new information.
 
 **Clustering — Quick Guards are undervalued**
 
